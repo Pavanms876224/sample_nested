@@ -4,5 +4,6 @@ cc_library(
     name = "sample_lib",
     srcs = ["libsample_library.a"],
     hdrs = glob(["include/**/*.h"]),
+    copts = ["-Iinclude"],
     visibility = ["//visibility:public"],
 )
