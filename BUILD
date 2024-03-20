@@ -5,5 +5,6 @@ cc_library(
     srcs = ["libsample_library.a"],
     hdrs = glob(["include/**/*.h"]),
     copts = ["-Iinclude"],
+    includes = ["include"],
     visibility = ["//visibility:public"],
 )
